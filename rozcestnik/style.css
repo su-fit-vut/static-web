@@ -1,0 +1,76 @@
+* {
+    font-family: 'Dosis', sans-serif;
+}
+
+h1 {
+    display: block;
+    margin: 0 auto;
+    padding-top: 1rem;
+    font-size: 2.4em;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+#content-container {
+    margin: 0 10px;
+}
+
+.logo-img {
+    max-height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.link-tree {
+    list-style-type: none;
+    padding: 0;
+}
+
+.link-tree li {
+    display: block;
+    border-radius: 3px;
+    max-width: 500px;
+    margin: 0 auto 5px auto;
+    line-height: 1.5;
+    transition: all 0.2s ease-in-out;
+    background-color: #007cc4;
+}
+
+.link-tree li.divider {
+    height: 2px;
+    background-color: #ff5a00;
+    margin: 8px auto;
+}
+
+.link-tree li.divider:hover {
+    background-color: #ff5a00;
+}
+
+.link-tree li:hover {
+    background-color: #0065a0;
+}
+
+.link-tree li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.4em;
+    font-size: 1.3em;
+}
+
+.nuke {
+    background-color: #36fc6b !important;
+}
+
+.nuke:hover {
+    background-color: #30e460 !important;
+}
