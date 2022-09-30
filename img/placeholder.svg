@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-3582 11135 207 266">
+  <defs>
+    <style>
+      .cls-1, .cls-4, .cls-6 {
+        fill: none;
+      }
+
+      .cls-1, .cls-4 {
+        stroke: #c8d0ff;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #e8eaea;
+        stroke: #e8eaea;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="Path_4311" data-name="Path 4311" class="cls-1" d="M0-32H106.5V138.406H0Z" transform="translate(0 32)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_6232" data-name="Group 6232" transform="translate(-3732 10945)">
+    <g id="Rectangle_5508" data-name="Rectangle 5508" class="cls-2" transform="translate(150 190)">
+      <rect class="cls-5" width="207" height="266"/>
+      <rect class="cls-6" x="0.5" y="0.5" width="206" height="265"/>
+    </g>
+    <g id="Group_6225" data-name="Group 6225" transform="translate(200.748 241.797)">
+      <g id="Group_6224" data-name="Group 6224" class="cls-3">
+        <path id="Path_4307" data-name="Path 4307" class="cls-1" d="M43.319,26.663C43.319,8.347,37.512-6.5,16.16-6.5S-11,8.347-11,26.663,3.135,59.826,16.16,59.826,43.319,44.979,43.319,26.663Z" transform="translate(37.092 15.613)"/>
+        <path id="Path_4308" data-name="Path 4308" class="cls-4" d="M76.742,6.475,56.81-1.5,32.846,22.466,8.883-1.5-11.049,6.475a10.651,10.651,0,0,0-6.694,9.884V67.88A10.753,10.753,0,0,0-9.627,78.248a167.944,167.944,0,0,0,84.948,0A10.759,10.759,0,0,0,83.436,67.88V16.364A10.653,10.653,0,0,0,76.742,6.475Z" transform="translate(20.407 84.038)"/>
+        <path id="Path_4309" data-name="Path 4309" class="cls-4" d="M0,0V39" transform="translate(87.866 125.142)"/>
+        <path id="Path_4310" data-name="Path 4310" class="cls-4" d="M0,0V39" transform="translate(18.638 125.142)"/>
+      </g>
+    </g>
+  </g>
+</svg>
