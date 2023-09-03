@@ -116,12 +116,12 @@ ul {
 }
 
 a.startatfit {
-    color:rgb(93, 33, 0) !important;
+    color:#7a0707 !important;
     font-weight: 500;
 }
 
 a.startatfit:hover {
-    color:rgb(129, 45, 0) !important;
+    color:#a31212 !important;
     font-weight: 500;
 }
 
