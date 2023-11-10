@@ -115,6 +115,23 @@ ul {
     color: black;
 }
 
+.role-info {
+    display: block;
+    margin-bottom: 0.35em;
+    color: #444;
+    font-weight: 500;
+    font-size: small;
+}
+
+.role-info a {
+    color: #444;
+    text-decoration: underline;
+}
+
+.role-info a:hover {
+    color: #000;
+}
+
 a.startatfit {
     color:#7a0707 !important;
     font-weight: 500;
