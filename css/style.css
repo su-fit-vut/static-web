@@ -124,8 +124,8 @@ ul {
 }
 
 .role-info a {
-    color: #444;
-    text-decoration: underline;
+    color: #3d5971;
+    font-weight: 500;
 }
 
 .role-info a:hover {
