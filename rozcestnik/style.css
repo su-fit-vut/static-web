@@ -45,6 +45,10 @@ body {
     background-color: #007cc4;
 }
 
+.link-tree li.skoleni {
+    background-color: #1c83be;
+}
+
 .link-tree li.divider {
     height: 2px;
     background-color: #ff5a00;
@@ -55,7 +59,7 @@ body {
     background-color: #ff5a00;
 }
 
-.link-tree li:hover {
+.link-tree li:hover, .link-tree li.skoleni:hover {
     background-color: #0065a0;
 }
 
