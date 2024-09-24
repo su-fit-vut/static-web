@@ -9,7 +9,7 @@ a {
 }
 
 a:hover {
-    color: #cc4700;
+    color: #e65000;
 }
 
 .fw-500 {
@@ -166,4 +166,15 @@ a.startatfit:hover {
 
 .spacer {
     margin-top: 3em;
+}
+
+
+.btn-su {
+    background: #ff5a00;
+    color: white;
+}
+
+.btn-su:hover {
+    background: #e65000;
+    color: white;
 }
