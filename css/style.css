@@ -55,6 +55,10 @@ h3 {
     font-size: 1.4em;
 }
 
+.navbar-logo {
+    height: 2em;
+}
+
 .contact-link {
     color: #7a0707;
 }
