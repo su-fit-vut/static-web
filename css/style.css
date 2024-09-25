@@ -105,8 +105,12 @@ h3 {
     text-decoration: none;
     color: white;
     font-size: 28px;
-    margin-right: 0.25em;
+    margin-right: 0.5em;
     padding: 0;
+}
+
+.icons a:hover {
+    opacity: 0.9;
 }
 
 ul {
