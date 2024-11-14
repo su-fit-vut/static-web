@@ -37,7 +37,6 @@ h2 {
 h2 a {
     font-family: 'Dosis', sans-serif;
     font-weight: 500;
-    text-decoration: none;
     color: #095194;
 }
 
@@ -130,6 +129,7 @@ ul {
 .role-info a {
     color: #3d5971;
     font-weight: 500;
+    text-decoration: none;
 }
 
 .role-info a:hover {
@@ -152,4 +152,20 @@ a.startatfit:hover {
 
 .small-link i {
     font-size: 75%;
+}
+
+a.nav-link {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+a[href^="mailto:"] {
+    text-decoration: none;
+}
+a[href^="tel:"] {
+    text-decoration: none;
 }
