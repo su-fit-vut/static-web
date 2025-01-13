@@ -314,7 +314,7 @@ a:focus {
 
 .vl {
   border-left: 3px solid #ff2953;
-  height: 350px;
+  min-height: 350px;
 }
 
 .heathy_section_gradient {
