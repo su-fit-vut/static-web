@@ -168,6 +168,27 @@ a:focus {
   margin: 125px 0;
 }
 
+.backdrop {
+  background: rgba(45, 25, 30, 0.35);
+  border-radius: 3px;
+  box-shadow: 2px -1px 5px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(2px);
+}
+
+.food-details {
+  padding-top: 50px;
+  font-size: smaller;
+  text-align: center;
+  width: 100%;
+  margin: 5px
+}
+
+.food-details a {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
 .slider_section .detail-box {
   text-align: center;
 }
@@ -227,7 +248,7 @@ a:focus {
 }
 
 .us_section {
-  background-image: url(../images/backgrounds/background.png);
+  background-image: url(../images/backgrounds/background.jpg);
   background-size: cover;
   background-attachment: fixed;
   color: #ffffff;
@@ -365,7 +386,7 @@ a:focus {
 }
 
 .trainer_section {
-  background-image: url(../images/backgrounds/background.png);
+  background-image: url(../images/backgrounds/background.jpg);
   background-size: cover;
   background-attachment: fixed;
   color: #ffffff;
