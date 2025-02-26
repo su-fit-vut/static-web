@@ -310,6 +310,7 @@ a:focus {
   background-attachment: fixed;
   color: #ffffff;
   text-align: left;
+  height: 550px;
 }
 
 .vl {
@@ -433,6 +434,15 @@ a:focus {
   width: 100%;
 }
 
+.trainer_section.layout_padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.trainer_section .heading_container h2::before {
+  height: 0px;
+  padding-bottom: 0px;
+}
 
 .logos_section {
   padding: 20px;
