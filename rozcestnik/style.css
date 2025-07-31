@@ -38,11 +38,12 @@ body {
 .link-tree li {
     display: block;
     border-radius: 3px;
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto 5px auto;
     line-height: 1.5;
     transition: all 0.2s ease-in-out;
-    background-color: #007cc4;
+    background-color: #00a9e0;
+    text-shadow: 1px 1px 4px #777;
 }
 
 .link-tree li.skoleni {
@@ -51,12 +52,12 @@ body {
 
 .link-tree li.divider {
     height: 2px;
-    background-color: #ff5a00;
+    background-color: #e4002b;
     margin: 8px auto;
 }
 
 .link-tree li.divider:hover {
-    background-color: #ff5a00;
+    background-color: #e4002b;
 }
 
 .link-tree li:hover, .link-tree li.skoleni:hover {
