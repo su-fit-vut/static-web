@@ -46,6 +46,12 @@ body {
     text-shadow: 1px 1px 4px #777;
 }
 
+.link-tree li.plain, .link-tree li.plain:hover {
+    background-color: transparent;
+    text-shadow: none;
+    margin: 8px auto;
+}
+
 .link-tree li.skoleni {
     background-color: #1c83be;
 }
