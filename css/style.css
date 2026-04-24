@@ -172,4 +172,5 @@ a[href^="mailto:"] {
 }
 a[href^="tel:"] {
     text-decoration: none;
+    white-space: nowrap;
 }
