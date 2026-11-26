@@ -71,7 +71,7 @@ h4 {
     height: 100%;
     z-index: 1;
     opacity: 0.4;
-    background-image: url('../img/cover4.jpg');
+    background-image: url('../img/cover.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -108,6 +108,14 @@ ul {
 
 .teams p {
     text-align: justify;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+.lead-grid p {
+    text-align: justify;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 }
 
 .team-lead {
@@ -120,6 +128,40 @@ ul {
 
 .team-lead a {
     color: black;
+}
+
+.team-photo,
+.team-portrait {
+    max-width: 100%;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+}
+
+.team-photo {
+    width: 200px;
+}
+
+.team-portrait {
+    width: 160px;
+}
+
+.committee-photo {
+    width: 72px;
+    flex-shrink: 0;
+}
+
+@media (min-width: 576px) {
+    .committee-photo {
+        width: 96px;
+    }
+}
+
+.team-photo img,
+.team-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 22%;
 }
 
 .role-info {
