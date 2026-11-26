@@ -11,10 +11,15 @@ body {
 }
 
 a {
-  text-decoration: none;
+  user-select: none;
 }
+
 a:hover {
-  color: initial;
+  color: var(--secondary-light);
+}
+
+.nav-item a:hover {
+  text-decoration: none;
 }
 
 /* odsadenie sekcii */
@@ -36,6 +41,15 @@ a:hover {
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
+  user-select: none;
+}
+
+.hero_area_overlay {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1));
 }
 
 .header_section .container-fluid {
@@ -45,22 +59,21 @@ a:hover {
 
 .custom_nav-container {
   z-index: 99999;
-  padding: 15px 0;
+  padding: 0;
+  margin-top: 5px;
 }
 
 .navbar-brand span {
-  font-family: 'Cinzel', serif;
-  font-size: 24px;
+  font-family: 'Six Caps', serif;
+  font-size: 1.3rem;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   color: #ffffff;
-  text-transform: uppercase;
 }
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
   margin: 10px 30px;
-  padding: 0;
-  padding-bottom: 3px;
+  padding: 10px 0px;
   color: #ffffff;
   text-align: center;
   position: relative;
@@ -76,13 +89,13 @@ a:hover {
   bottom: 0;
   width: 100%;
   height: 3px;
-  border-radius: 5px;
   background-color: #ffffff;
+  text-decoration: none;
 }
 
-.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item:hover a::after {
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item a:hover::after {
   display: block;
-  background-color: #ff2953;
+  background-color: var(--secondary);
 }
 
 .custom_nav-container .navbar-toggler {
@@ -107,30 +120,28 @@ a:hover {
 }
 
 .hero-title, .hero-patronage, .hero-date, .hero-location {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Six Caps', serif;
   font-weight: 300;
-  text-transform: uppercase;
 }
 
 .hero-title {
-  font-size: 4.5rem;
+  font-size: 7rem;
   letter-spacing: 0.3rem;
-  animation: glowFade 4s ease-in-out infinite alternate;
-  text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  animation: glowFade 2s ease-in-out infinite alternate;
   margin-top: -13px;
 }
 
 .hero-date {
   font-size: 5rem; /* Rovnaká veľkosť ako hlavný titulok */
   letter-spacing: 0.3rem;
-  animation: glowFade 4s ease-in-out infinite alternate;
-  text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  animation: glowFade 2s ease-in-out infinite alternate;
   margin-top: -13px;
 }
 
 .hero-patronage {
   font-size: 2.2rem;
   letter-spacing: 0.2rem;
+  animation: glowFade 2s ease-in-out infinite alternate;
   margin-top: -15px;
 }
 
@@ -141,7 +152,7 @@ a:hover {
 
 @keyframes glowFade {
   0% { text-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.1); }
-  100% { text-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 200, 255, 0.3); }
+  100% { text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 200, 255, 0.3); }
 }
 
 /* --- Spoločné štýly pre sekcie --- */
@@ -153,42 +164,43 @@ a:hover {
 }
 
 .info_section h2, .program_section h2, #vecere h2, .wine_section h2, #sponzori h2 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Six Caps', serif;
   font-weight: 300;
-  font-size: 3rem;
+  font-size: 5rem;
   letter-spacing: 2px;
-  text-transform: uppercase;
   position: relative;
+  user-select: none;
 }
 
-/* Červené podčiarknutie pre vybrané sekcie */
+/* Secondaty color podčiarknutie pre vybrané sekcie */
 .info_section h2::after, .program_section h2::after, #vecere h2::after, .wine_section h2::after {
   content: "";
   display: block;
   width: 60px;
   height: 3px;
-  background-color: #ff2953;
+  background-color: var(--secondary);
   margin: 10px auto 20px;
 }
 
 /* --- Sekcia Informace --- */
 .info_section {
-  background-color: #0e273e;
+  background-color: var(--primary);
   color: white;
   text-align: center;
 }
 
 .info-text {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: #fff;
-  max-width: 700px;
+  max-width: 800px;
   margin: auto;
   line-height: 1.6;
 }
 
 .info-link {
-  color: #ff2953;
+  color: var(--secondary);
   text-decoration: underline;
+  user-select: text;
 }
 
 .info-notice {
@@ -215,14 +227,14 @@ a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(14, 39, 62, 0.3); /* Jemný tmavý filter */
+  background: color-mix(in srgb, var(--primary) 30%, transparent); /* Jemný tmavý filter */
   z-index: 1;
 }
 
 .program_section .container, .wine_section .container {
   position: relative;
   z-index: 2;
-  background: rgba(14, 39, 62, 0.45); /* Modrý nádych */
+  background: color-mix(in srgb, var(--primary) 30%, transparent); /* Modrý nádych */
   backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 50px 60px;
@@ -266,13 +278,17 @@ a:hover {
   transition: color 0.2s;
 }
 
-.gallery_links a:hover { color: #ff2953; }
+.gallery_links a:hover { color: var(--secondary); }
 .gallery_links span { color: #bbbbbb; font-size: 1rem; }
 
 /* --- Sekcia Večeře & Sponzoři (spoločný základ) --- */
 .trainer_section {
-  background-color: #0e273e;
+  background-color: var(--primary);
   color: #ffffff;
+}
+
+#vecere {
+  border-top: 5px solid var(--secondary);
 }
 
 #vecere .box {
@@ -306,8 +322,8 @@ a:hover {
 }
 
 #sponzori .heading_container h2 {
-  font-size: 2.2rem;
-  color: #ccc;
+  font-size: 3.5rem;
+  letter-spacing: 4px;
 }
 
 /* --- Sekcia s logami partnerov --- */
@@ -323,18 +339,36 @@ a:hover {
   align-items: center;
 }
 
+.logos_container a {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.logos_container > a:hover {
+  transform: scale(1.05);
+}
+
 .logo {
   width: 100%;
   max-width: 150px;
   height: auto;
   background-color: white;
+  padding: auto;
 }
+
 
 /* --- Vylepšenia pre mobilné zariadenia --- */
 @media (max-width: 768px) {
+  
+  /* Zmenšenie klikateľného nadpisu v hlavičke */
+  .navbar-brand span { font-size: 1.5rem; }
+
   /* Skrytie nepotrebných nadpisov v úvode */
   .hero-patronage, .hero-location {
-    display: none;
+    /* display: none; */
   }
   
   .hero-date { margin-top: 15px; }
@@ -348,11 +382,12 @@ a:hover {
 
   /* Zmenšenie hlavných nadpisov */
   .hero-title {
-    font-size: 2.3rem;
+    font-size: 5rem;
     letter-spacing: 0.1rem;
     line-height: 1.2;
     margin-top: -80px;
   }
+
   .hero-date {
     font-size: 2.3rem;
     letter-spacing: 0.1rem;
@@ -370,11 +405,9 @@ a:hover {
   .info_section h2, .program_section h2, #vecere h2, .wine_section h2 {
     font-size: 2.3rem;
   }
-  
+
   /* Zmenšenie písma v zozname programu */
   .program_list { font-size: 1rem; }
   .program_list span { font-size: 1.2rem; width: 60px; }
   
-  /* Zmenšenie klikateľného nadpisu v hlavičke */
-  .navbar-brand span { font-size: 18px; }
 }
